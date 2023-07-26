@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Проекты</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title" id="0">
+            Мои проекты
+        </div>
+        <div class="project-list">
+            <div onclick="smoothScrollTo(1)" class="project-list-element">Психологические исследования</div>
+            <div onclick="smoothScrollTo(2)" class="project-list-element">Интернет магазин</div>
+            <div onclick="smoothScrollTo(3)" class="project-list-element">PHP фреймворк</div>
+            <div onclick="smoothScrollTo(4)" class="project-list-element">Класс для работы с матрицами</div>
+            <div onclick="smoothScrollTo(5)" class="project-list-element">Нейронная сеть</div>
+        </div>
+        <div class="projects-container">
+            <div class="project" id="1">
+                <div class="project-title" onclick="smoothScrollTo(0)">
+                    Психологические исследования
+                </div>
+                <div class="project-description">
+                    <p>
+                        Платформа, реализующая создание опросов для проведения психологических исследований.
+                        Включена обработка данных в виде разделения опрошенных на группы.
+                        Результаты опросов представляются в виде таблицы с подсчитанными баллами по шкалам. 
+                        Таблицы можно скачать в формате Excel. Данные можно статистически обработать по критерию Фишера.
+                    </p>
+                    <p>
+                        Проект представлялся в качестве выпускной квалификационной работы по направлению
+                        &laquo;Математика и компьютерные науки&raquo; в ДВФУ.
+                    </p> 
+                </div>
+                <div class="project-soft-list">
+                    <div class="project-soft">Laravel</div>
+                    <div class="project-soft">React</div>
+                    <div class="project-soft">PostgreSQL</div>
+                    <div class="project-soft">Open Server</div>
+                </div>
+                <div class="project-repository">
+                    <a href="https://github.com/AngryBro/psy-forms" target="_blank" rel="noopener noreferrer">Репозиторий (клиенсткая часть)</a>
+                    <a href="https://github.com/AngryBro/psy-forms-api" target="_blank" rel="noopener noreferrer">Репозиторий (серверная часть)</a>
+                </div>
+                <div class="project-screenshots-container">
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/1/main.png" alt="Скриншот главной страницы">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/1/lk.png" alt="Скриншот личного кабинета">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/1/constructor.png" alt="Скриншот конструктора вопросов">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/1/statistic.png" alt="Скриншот статистической обработки">
+                    </div>
+                </div>
+            </div>
+            <div class="project" id="2">
+                <div onclick="smoothScrollTo(0)" class="project-title">
+                    Интернет магазин
+                </div>
+                <div class="project-description">
+                    <p>
+                        Содержит каталог с возможностью сортировки,
+                        добавления товаров в избранное и в корзину.
+                        Присутствует функционал оформления заказа.
+                        Наполнение содержимым и просмотр заказов происходит через админ панель.
+                    </p>
+                    <p>
+                        Проект разрабатывался в рамках дисциплины &laquo; Управление проектами &raquo;
+                        в ДВФУ, проведённой FEIP.
+                    </p>
+                </div>
+                <div class="project-soft-list">
+                    <div class="project-soft">Laravel</div>
+                    <div class="project-soft">React</div>
+                    <div class="project-soft">PostgreSQL</div>
+                    <div class="project-soft">Docker</div>
+                </div>
+                <div class="project-repository">
+                    <a href="https://github.com/AngryBro/fefu_shop" target="_blank" rel="noopener noreferrer">Репозиторий</a>
+                </div>
+                <div class="project-screenshots-container">
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/main.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/catalog.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/product.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/cart.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/feedback.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/admin.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/colors.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/orders.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/pages.PNG" alt="">
+                    </div>
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/2/properties.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+            <div onclick="smoothScrollTo(0)" class="project" id="3">
+                <div class="project-title">
+                    PHP фреймворк
+                </div>
+                <div class="project-description">
+                    <p>
+                        Мини-фреймворк для разработки веб приложений.
+                        Содержит маршрутизацию, настройку подключения к базе данных,
+                        конструктор запросов к базе данных.
+                    </p>
+                    <p>
+                        Проект разрабатывался в личных целях для изучения языка програмирования PHP.
+                    </p>
+                </div>
+                <div class="project-repository">
+                    <a href="https://github.com/AngryBro/backend_framework" target="_blank" rel="noopener noreferrer">Репозиторий</a>
+                </div>
+            </div>
+            <div onclick="smoothScrollTo(0)" class="project" id="4">
+                <div class="project-title">
+                    Класс для работы с матрицами
+                </div>
+                <div class="project-description">
+                    <p>
+                        Функциональный класс на языке Javascript для работы с матрицами.
+                        Поддерживает стандартные операции, такие как: сложение, вычитание,
+                        умножение, обращение матрицы, вычисление определителя, вычисление миноров
+                        и алгебраических дополнений. Позволяет работать с матрицей как с вектором.
+                        Поддерживается вычисление матричных и векторных норм. Различные форматы выводы матрицы:
+                        в консоль, преобразование в массив, в код Latex, в строку.
+                    </p>
+                </div>
+                <div class="project-repository">
+                    <a href="https://github.com/AngryBro/MatrixJS/blob/main/matrix.js" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+            </div>
+            <div onclick="smoothScrollTo(0)" class="project" id="5">
+                <div class="project-title">
+                    Нейронная сеть
+                </div>
+                <div class="project-description">
+                    <p>
+                        Проект разрабатывался в личных целях для изучения принципа работы нейронных сетей.
+                        В нём реализован класс для создания и обучения нейронной сети,
+                        решающей задачу регрессии. Тестирование было проведено на iris dataset.
+                        Точность бинарной классификации достигала 100%, а тернарной &ndash; 95%.
+                    </p>
+                </div>
+                <div class="project-repository">
+                    <a href="https://github.com/AngryBro/neuronet/blob/main/Neuronet.js" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <div class="project-screenshots-container">
+                    <div class="project-screenshot">
+                        <img onclick="img(this)" src="img/5/iris.gif" alt="Скриншот теста">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
